@@ -84,7 +84,7 @@ section {
 }
 /* hero */
 #hero{
-    background: linear-gradient(to right, #1B1F34, rgba(27, 31,52, 0.0)), url(/img/barber-2.jpg);
+    background: linear-gradient(to right, #1B1F34, rgba(27, 31,52, 0.0)), url(../img/barber-2.jpg);
     min-height: 100vh;
     display: flex;
     background-position: center;
