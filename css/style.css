@@ -84,7 +84,7 @@ section {
 }
 /* hero */
 #hero{
-    background: linear-gradient(to right, #1B1F34, rgba(27, 31,52, 0.0)), url(/img/haircut-4.jpg);
+    background: linear-gradient(to right, #1B1F34, rgba(27, 31,52, 0.0)), url(./img/haircut-4.jpg);
     min-height: 100vh;
     display: flex;
     background-position: center;
@@ -165,7 +165,7 @@ section {
 }
 /* milstone */
 #milestone{
-    background: linear-gradient(to right, rgb(27, 31, 52, 0.8), rgb(27, 31, 52, 0.8)), url(/img/barber-1.jpg);
+    background: linear-gradient(to right, rgb(27, 31, 52, 0.8), rgb(27, 31, 52, 0.8)), url(./img/barber-1.jpg);
     background-size: cover;
     background-position: center;
     
