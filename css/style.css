@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --bg1: #151828;
+    --bg2: #1B1F34;
+    --body: #959DCC;
+    --brand: #FFAB76;
+    --white: #fff;
+}
+body{
+    font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Dela Gothic one", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+a {
+    color: var(--body);
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+a:hover{
+ color: var(--brand);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.link-more{
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+}
+.link-more .icon{
+    transition: all 0.4s ease;
+}
+.link-more:hover .icon{
+    transform: translateX(8px);
+}
+
+/* intro */
+.intro{
+    margin-bottom: 60px;
+
+}
+.intro h1{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+ .intro h6{
+    color: var(--brand);
+ }
+ .intro p{
+    max-width: 500px;
+    margin: auto;
+ }
+ .cta-btns{
+    margin-top: 60px;
+ }
+/* navbar */
+.navbar{
+ background: linear-gradient(to bottom, #1B1F34, rgba(27, 31,52, 0.2));
+}
+.navbar .navbar-nav .nav-link.active{
+    color: var(--brand);
+}
+.navbar-brand{
+    font-family: "Dela Gothic one", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+/* hero */
+#hero{
+    background: linear-gradient(to right, #1B1F34, rgba(27, 31,52, 0.0)), url(/imag/haircut-4.jpg);
+    min-height: 100vh;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+#hero p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* btn */
+.btn{
+    padding: 16px, 13px;
+    font-family: "Dela Gothic one", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s;
+    border-radius: 0;
+}
+
+.btn-brand{
+ background-color: var(--brand);
+}
+.btn-brand:hover{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand:hover{
+    background-color: var(--brand);
+}
+
+/* about section */
+#about{
+ position: relative;
+}
+
+#about::after{
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about h6{
+    color: var(--brand);
+}
+#about h1 {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+#about .signature{
+    width: unset;
+}
+
+/* service */
+#services{
+    background: var(--bg2);
+}
+#services .service .content {
+    padding: 32px;
+
+}
+
+#services .service p{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+/* milstone */
+#milestone{
+    background: linear-gradient(to right, rgb(27, 31, 52, 0.8), rgb(27, 31, 52, 0.8)), url(/img/cover_2.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+#milestone h1{
+    color: var(--brand);
+}
+
+/* features */
+#features{
+    background-color: var(--bg1);
+}
+.feature{
+display: flex;
+}
+.feature .icon-feature{
+    font-size: 36px;
+    color: var(--brand);
+    line-height: 1;
+    margin-right: 16px;
+}
+.feature p{
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+/* social icons */
+.social-links a{
+ width: 48px;
+ height: 48px;
+ background-color: var(--bg2);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.social-links a:hover{
+    background-color: var(--brand);
+    color: var(--bg2);
+}
+/* Team */
+#team{
+    background-color: var(--bg2);
+}
+.team-member{
+    position: relative;
+}
+.team-member .social-links{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+.team-member:hover .social-links{
+    opacity: 1;
+    top: 30px;
+}
+/* reviews */
+#reviews{
+    background-color: var(--bg1);
+}
+.review{
+    padding: 32px;
+    background-color: var(--bg2);
+    position: relative;
+}
+.review img{
+    width: 60px;
+    border-radius: 100px;
+    
+}
+.review .icon{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand);
+    color: var(--bg1);
+    border-radius: 100px;
+    position: absolute;
+    right: 32px;
+}
+/* blog */
+#blog{
+    background-color: var(--bg2);
+}
+.blog-post{
+    position: relative;
+}
+.blog-post .date{
+    width: 100px;
+    height: 100px;
+    background-color: var(--brand);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.blog-post .day{
+    font-size: 32px;
+    line-height: 1;
+    font-family: "Dela Gothic One" 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1B1F34;
+}
+.blog-post .year{
+    color: var(--bg1);
+}
+
+/* BOOKING */
+#booking{
+    background: linear-gradient(to right, rgb(27, 31, 52, 0.8), rgb(27, 31, 52, 0.8)), url(/img/cover_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#booking form{
+    background-color: var(--bg1);
+
+}
+#booking form .form-control{
+    background-color: var(--bg2);
+    border-radius: 0;
+    margin: 16px;
+    border-color: var(--bg2);
+    border: 2px solid var(--bg2);
+    color: var(--body);
+}
+
+#booking form input{
+    height: 58px;
+}
+#booking form .form-control:focus{
+    box-shadow: none;
+    border-left-color: var(--brand);
+}
+
+/* Footer */
+    footer{
+        padding-top: 160px;
+    }
+ footer .social-links{
+    display: flex; 
+ }
+ footer .social-links a{
+    margin-right: 5px; 
+ }
+ .footer-top{
+    padding-bottom: 30px;
+ }
+ .footer-bottom{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid var(--bg2);
+ }
+
+
+
+
+
